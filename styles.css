@@ -14,7 +14,6 @@ body {
 main {
   margin-top: 20px;
   margin-bottom: 20px;
-  padding: 50px;
   width: 90%; /* 或你所需的任何宽度，根据实际需求调整 */
   margin: 0 auto; /* 上下保持为0，左右设置为auto实现居中 */
   max-width: 1200px; /* 可以设置一个最大宽度以防内容过于扩展 */
