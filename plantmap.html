@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eormoe_Plant Saucers for Indoors</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="header-image">
+        <img src="pic/homepage/header.jpg" alt="Header Image">
+    </div>
+    <main>
+        <button class="home-button" onclick="window.location.href='index.html';">Home</button>
+        <div class="product-gallery">
+            <div class="thumbnail-container">
+                <img onclick="changeImage('pic/plant saucers/plant1.jpg')" src="pic/plant saucers/plant1.jpg" alt="Thumbnail 1" class="thumbnail">
+                <img onclick="changeImage('pic/plant saucers/plant2.jpg')" src="pic/plant saucers/plant2.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img onclick="changeImage('pic/plant saucers/plant3.jpg')" src="pic/plant saucers/plant3.jpg" alt="Thumbnail 3" class="thumbnail">
+                <img onclick="changeImage('pic/plant saucers/plant4.jpg')" src="pic/plant saucers/plant4.jpg" alt="Thumbnail 4" class="thumbnail">
+                <img onclick="changeImage('pic/plant saucers/plant5.jpg')" src="pic/plant saucers/plant5.jpg" alt="Thumbnail 5" class="thumbnail">
+                <img onclick="changeImage('pic/plant saucers/plant6.jpg')" src="pic/plant saucers/plant6.jpg" alt="Thumbnail 6" class="thumbnail">
+                <!-- Add more thumbnails as needed -->
+            </div>
+            
+            <img id="main-image" src="pic/plant saucers/plant1.jpg" alt="Main Image" class="main-image">
+            <div class="product-info">
+                <h2>Plant Saucers for Indoors</h2>
+                <p class="price">Price: $24.99</p>
+                <!-- <ul class="size">
+                    <li>Size: 24x36 inches</li>
+                    <li>Size: 20x30 inches</li>
+                </ul>
+                <div class="color">
+                    <button>Light Grey</button>
+                    <button onclick="window.location.href='product1.1.html';">Grey</button>
+                </div> -->
+                <p class="description"><strong>Product Details</strong></p>
+                <p>Diatomite Stone Water Catcher Tray, Quick Dry, Eco-Chic Plant Coasters for House Plants - Keep Your Room Tidy and Dry (2 Pcs, 8inch & 6inch)</p>
+                <!-- <p>--- PLEASE MEASURE BEFORE PURCHASING ---</p> -->
+                <span class="show-more" onclick="toggleDescription()">Show More</span>
+                <div class="full-description" style="display: none;">
+                    <p>✔✔【𝐒𝐮𝐩𝐞𝐫 Absorbent】With special diatomaceous earth material, our plant coasters perform well in water absorption, and you don't have to worry about the overflowing water staining your room.</p>
+                    <p>✔【𝐏𝐫𝐞𝐯𝐞𝐧𝐭 Root Rot】The carved texture improves the pot's bottom airflow and speeds up the absorption of excess water, ensuring instant drying. Letting your plants stay healthy after watering.</p>
+                    <p>✔【𝐄𝐜𝐨-chic Choice】Made from eco-friendly and long-lasting materials, our premium diatomite plant trays for pots brings a natural and organic touch to indoor decor. Say goodbye to cracky plastic, plain aesthetics, and disorderly plant saucers.</p>
+                    <p>✔【𝐄𝐚𝐬𝐲 to Maintain】No need to deal with water pooling inside, unlike traditional plant saucers. If you notice your plant water catcher tray has become less absorbent over time, just sand the surface with the provided tool. This restores it to its original absorbency.</p>
+                    <p>✔【𝐏𝐫𝐨𝐭𝐞𝐜𝐭 𝐒𝐮𝐫𝐟𝐚𝐜𝐞𝐬】 With absorbent material, smooth edge and delicate design, the Diatomite Plant Saucers for Indoors will protect your floor, table surface free from scratches, overflow, or unwanted dirt.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        function toggleDescription() {
+            var fullDescription = document.querySelector('.full-description');
+            if (fullDescription.style.display === 'none') {
+                fullDescription.style.display = 'block';
+                document.querySelector('.show-more').textContent = 'Show Less';
+            } else {
+                fullDescription.style.display = 'none';
+                document.querySelector('.show-more').textContent = 'Show More';
+            }
+        }
+    </script>
+</body>
+<footer>
+    <p>© 2024 Eormoe Store. All rights reserved.</p>
+</footer>
+</html>

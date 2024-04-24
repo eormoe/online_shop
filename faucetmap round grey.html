@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eormoe_kitchen faucet map</title>
+    <link rel="stylesheet" href="product.css">
+</head>
+<body>
+    <div class="header-image">
+        <img src="pic/homepage/header.jpg" alt="Header Image">
+    </div>
+    <main>
+        <button class="home-button" onclick="window.location.href='index.html';">Home</button>
+        <div class="product-gallery">
+            <div class="thumbnail-container">
+                <img onclick="changeImage('pic/faucet round/round1.jpg')" src="pic/faucet round/round1.jpg" alt="Thumbnail 1" class="thumbnail">
+                <img onclick="changeImage('pic/faucet round/round2.jpg')" src="pic/faucet round/round2.jpg" alt="Thumbnail 2" class="thumbnail">
+                <img onclick="changeImage('pic/faucet round/round3.jpg')" src="pic/faucet round/round3.jpg" alt="Thumbnail 3" class="thumbnail">
+                <img onclick="changeImage('pic/faucet round/round4.jpg')" src="pic/faucet round/round4.jpg" alt="Thumbnail 4" class="thumbnail">
+                <img onclick="changeImage('pic/faucet round/round5.jpg')" src="pic/faucet round/round5.jpg" alt="Thumbnail 5" class="thumbnail">
+                <img onclick="changeImage('pic/faucet round/round6.jpg')" src="pic/faucet round/round6.jpg" alt="Thumbnail 6" class="thumbnail">
+                <!-- Add more thumbnails as needed -->
+            </div>
+            
+            <img id="main-image" src="pic/faucet round/round1.jpg" alt="Main Image" class="main-image">
+            <div class="product-info">
+                <h2>Kitchen Faucet Mat Round - Grey</h2>
+                <p class="price">Price: $19.99</p>
+                <p class="size-title">Size:</p>
+                <ul class="size">
+                    <li>17.7''</li>
+                    <li>23.6''</li>
+                </ul>
+                <div class="color">
+                    <span>Color:</span>
+                    <button>Grey</button>
+                    <button onclick="window.location.href='faucetmap round lightgrey.html';">Light Grey</button>
+                </div>
+                <p class="description"><strong>Product Details</strong></p>
+                <p>Diatomite Splash Guard for Sink, Quick-Drying Water Absorbing Stone Tray [23.6" x 3.9", Grey], Includes Sandpaper</p>
+                <p>--- PLEASE MEASURE BEFORE PURCHASING ---</p>
+                <span class="show-more" onclick="toggleDescription()">Show More</span>
+                <div class="full-description" style="display: none;">
+                    <p>✔【Size】Overall dimension (L x W x H) is 23.6" x 3.9'' x 0.4'' / 60cm x 10cm x 1cm, with a central hole diameter of 2.5'' / 6.5cm. Make sure there's nothing in the way around your faucet — a clear space of 23.6'' x 3.9 ''.</p>
+                    <p>✔【Drying Fast】The diatomite stone's small holes enable amazing water absorption, quickly soaking up splashes and self-drying within minutes. Say goodbye to annoying drips and keep everything dry!</p>
+                    <p>✔【No More Messy Countertops】Suitable to be used as absorbent mats for soaps, cups, soap bottle, dish sponge, lotions, and anywhere you need to absorb water quickly, keeping your countertops more dry and tidy.</p>
+                    <p>✔【Enjoy Long-lasting Durability】Minimal maintenance required; our kitchen faucet absorbent mat is designed for lasting durability. Its absorbency can be rejuvenated with the provided sanding tool, proving its sustainable value over time.</p>
+                    <p>✔【Modern & Stylish】Designed for the modern home, our faucet drip mat for kitchen sink combines aesthetics and functionality to impress guests and keep your sink clean. Not just for the kitchen, but also for bathroom, RV, and bar spigots.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <script>
+        function toggleDescription() {
+            var fullDescription = document.querySelector('.full-description');
+            if (fullDescription.style.display === 'none') {
+                fullDescription.style.display = 'block';
+                document.querySelector('.show-more').textContent = 'Show Less';
+            } else {
+                fullDescription.style.display = 'none';
+                document.querySelector('.show-more').textContent = 'Show More';
+            }
+        }
+    </script>
+</body>
+<footer>
+    <p>© 2024 Eormoe Store. All rights reserved.</p>
+</footer>
+</html>
